@@ -25,10 +25,6 @@ namespace main
             this.WndProc(ref m);
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
             this.Close(); // Закрываем текущую форму
