@@ -36,7 +36,7 @@ namespace main
             this.password_textBox = new System.Windows.Forms.TextBox();
             this.error_label = new System.Windows.Forms.Label();
             this.login_button = new System.Windows.Forms.Button();
-            this.close_button = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Login
@@ -108,18 +108,16 @@ namespace main
             this.login_button.Text = "Log in";
             this.login_button.UseVisualStyleBackColor = true;
             // 
-            // close_button
+            // label1
             // 
-            this.close_button.FlatAppearance.BorderSize = 0;
-            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.close_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.close_button.Location = new System.Drawing.Point(330, 0);
-            this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(72, 37);
-            this.close_button.TabIndex = 4;
-            this.close_button.Text = "close";
-            this.close_button.UseVisualStyleBackColor = false;
-            this.close_button.Click += new System.EventHandler(this.button2_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(349, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 16);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "close";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // AuthorizationForm
             // 
@@ -128,7 +126,7 @@ namespace main
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(402, 271);
             this.ControlBox = false;
-            this.Controls.Add(this.close_button);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.error_label);
             this.Controls.Add(this.password_textBox);
@@ -159,6 +157,6 @@ namespace main
         private System.Windows.Forms.TextBox password_textBox;
         private System.Windows.Forms.Label error_label;
         private System.Windows.Forms.Button login_button;
-        private System.Windows.Forms.Button close_button;
+        private System.Windows.Forms.Label label1;
     }
 }
