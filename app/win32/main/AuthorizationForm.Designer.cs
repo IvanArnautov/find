@@ -43,7 +43,7 @@ namespace main
             // 
             this.Login.AutoSize = true;
             this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Login.Location = new System.Drawing.Point(115, 49);
+            this.Login.Location = new System.Drawing.Point(117, 40);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(187, 31);
             this.Login.TabIndex = 0;
@@ -52,27 +52,27 @@ namespace main
             // userid_label
             // 
             this.userid_label.AutoSize = true;
-            this.userid_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.userid_label.Location = new System.Drawing.Point(42, 107);
+            this.userid_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.userid_label.Location = new System.Drawing.Point(41, 106);
             this.userid_label.Name = "userid_label";
-            this.userid_label.Size = new System.Drawing.Size(76, 24);
+            this.userid_label.Size = new System.Drawing.Size(75, 22);
             this.userid_label.TabIndex = 1;
             this.userid_label.Text = ": UserID";
             // 
             // password_label
             // 
             this.password_label.AutoSize = true;
-            this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.password_label.Location = new System.Drawing.Point(16, 155);
+            this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.password_label.Location = new System.Drawing.Point(12, 157);
             this.password_label.Name = "password_label";
-            this.password_label.Size = new System.Drawing.Size(102, 24);
+            this.password_label.Size = new System.Drawing.Size(99, 22);
             this.password_label.TabIndex = 1;
             this.password_label.Text = ": Password";
             // 
             // userid_textBox
             // 
             this.userid_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.userid_textBox.Location = new System.Drawing.Point(115, 102);
+            this.userid_textBox.Location = new System.Drawing.Point(117, 102);
             this.userid_textBox.Name = "userid_textBox";
             this.userid_textBox.Size = new System.Drawing.Size(191, 29);
             this.userid_textBox.TabIndex = 1;
@@ -81,17 +81,18 @@ namespace main
             // password_textBox
             // 
             this.password_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.password_textBox.Location = new System.Drawing.Point(115, 150);
+            this.password_textBox.Location = new System.Drawing.Point(117, 150);
             this.password_textBox.Name = "password_textBox";
             this.password_textBox.Size = new System.Drawing.Size(191, 29);
             this.password_textBox.TabIndex = 2;
             this.password_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.password_textBox.UseSystemPasswordChar = true;
             // 
             // error_label
             // 
             this.error_label.AutoSize = true;
             this.error_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.error_label.Location = new System.Drawing.Point(115, 80);
+            this.error_label.Location = new System.Drawing.Point(117, 83);
             this.error_label.Name = "error_label";
             this.error_label.Size = new System.Drawing.Size(36, 16);
             this.error_label.TabIndex = 4;
@@ -101,7 +102,7 @@ namespace main
             // 
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.login_button.Location = new System.Drawing.Point(115, 201);
+            this.login_button.Location = new System.Drawing.Point(117, 200);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(191, 40);
             this.login_button.TabIndex = 3;
