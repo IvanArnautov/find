@@ -1,7 +1,7 @@
 ﻿
 namespace main
 {
-    partial class AuthorizationForm
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -119,7 +119,7 @@ namespace main
             this.label1.Text = "close";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // AuthorizationForm
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -137,7 +137,7 @@ namespace main
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AuthorizationForm";
+            this.Name = "LoginForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

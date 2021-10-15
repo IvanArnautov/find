@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace main
 {
-    public partial class AuthorizationForm : Form
+    public partial class LoginForm : Form
     {
-        public AuthorizationForm()
+        public LoginForm()
         {
             InitializeComponent();
         }
