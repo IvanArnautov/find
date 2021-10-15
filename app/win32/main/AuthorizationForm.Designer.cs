@@ -113,9 +113,9 @@ namespace main
             this.exit_button.FlatAppearance.BorderSize = 0;
             this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.exit_button.Location = new System.Drawing.Point(308, 0);
+            this.exit_button.Location = new System.Drawing.Point(330, 0);
             this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(94, 56);
+            this.exit_button.Size = new System.Drawing.Size(72, 37);
             this.exit_button.TabIndex = 4;
             this.exit_button.Text = "close";
             this.exit_button.UseVisualStyleBackColor = false;
