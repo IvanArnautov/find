@@ -36,7 +36,7 @@ namespace main
             this.password_textBox = new System.Windows.Forms.TextBox();
             this.error_label = new System.Windows.Forms.Label();
             this.login_button = new System.Windows.Forms.Button();
-            this.exit_button = new System.Windows.Forms.Button();
+            this.close_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Login
@@ -108,18 +108,18 @@ namespace main
             this.login_button.Text = "Log in";
             this.login_button.UseVisualStyleBackColor = true;
             // 
-            // exit_button
+            // close_button
             // 
-            this.exit_button.FlatAppearance.BorderSize = 0;
-            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.exit_button.Location = new System.Drawing.Point(330, 0);
-            this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(72, 37);
-            this.exit_button.TabIndex = 4;
-            this.exit_button.Text = "close";
-            this.exit_button.UseVisualStyleBackColor = false;
-            this.exit_button.Click += new System.EventHandler(this.button2_Click);
+            this.close_button.FlatAppearance.BorderSize = 0;
+            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.close_button.Location = new System.Drawing.Point(330, 0);
+            this.close_button.Name = "close_button";
+            this.close_button.Size = new System.Drawing.Size(72, 37);
+            this.close_button.TabIndex = 4;
+            this.close_button.Text = "close";
+            this.close_button.UseVisualStyleBackColor = false;
+            this.close_button.Click += new System.EventHandler(this.button2_Click);
             // 
             // AuthorizationForm
             // 
@@ -128,7 +128,7 @@ namespace main
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(402, 271);
             this.ControlBox = false;
-            this.Controls.Add(this.exit_button);
+            this.Controls.Add(this.close_button);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.error_label);
             this.Controls.Add(this.password_textBox);
@@ -159,6 +159,6 @@ namespace main
         private System.Windows.Forms.TextBox password_textBox;
         private System.Windows.Forms.Label error_label;
         private System.Windows.Forms.Button login_button;
-        private System.Windows.Forms.Button exit_button;
+        private System.Windows.Forms.Button close_button;
     }
 }
