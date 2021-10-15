@@ -29,7 +29,6 @@ namespace main
         /// </summary>
         private void InitializeComponent()
         {
-            this.Login = new System.Windows.Forms.Label();
             this.userid_label = new System.Windows.Forms.Label();
             this.password_label = new System.Windows.Forms.Label();
             this.userid_textBox = new System.Windows.Forms.TextBox();
@@ -39,25 +38,15 @@ namespace main
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Login
-            // 
-            this.Login.AutoSize = true;
-            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Login.Location = new System.Drawing.Point(117, 40);
-            this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(187, 31);
-            this.Login.TabIndex = 0;
-            this.Login.Text = "Authentication";
-            // 
             // userid_label
             // 
             this.userid_label.AutoSize = true;
             this.userid_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.userid_label.Location = new System.Drawing.Point(41, 106);
+            this.userid_label.Location = new System.Drawing.Point(12, 109);
             this.userid_label.Name = "userid_label";
-            this.userid_label.Size = new System.Drawing.Size(75, 22);
+            this.userid_label.Size = new System.Drawing.Size(102, 22);
             this.userid_label.TabIndex = 1;
-            this.userid_label.Text = ": UserID";
+            this.userid_label.Text = ": Username";
             // 
             // password_label
             // 
@@ -92,7 +81,7 @@ namespace main
             // 
             this.error_label.AutoSize = true;
             this.error_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.error_label.Location = new System.Drawing.Point(117, 83);
+            this.error_label.Location = new System.Drawing.Point(117, 73);
             this.error_label.Name = "error_label";
             this.error_label.Size = new System.Drawing.Size(36, 16);
             this.error_label.TabIndex = 4;
@@ -134,7 +123,6 @@ namespace main
             this.Controls.Add(this.userid_textBox);
             this.Controls.Add(this.password_label);
             this.Controls.Add(this.userid_label);
-            this.Controls.Add(this.Login);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -150,8 +138,6 @@ namespace main
         }
 
         #endregion
-
-        private System.Windows.Forms.Label Login;
         private System.Windows.Forms.Label userid_label;
         private System.Windows.Forms.Label password_label;
         private System.Windows.Forms.TextBox userid_textBox;
