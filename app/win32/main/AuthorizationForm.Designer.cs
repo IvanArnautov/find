@@ -42,18 +42,18 @@ namespace main
             // Login
             // 
             this.Login.AutoSize = true;
-            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Login.Location = new System.Drawing.Point(111, 9);
+            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Login.Location = new System.Drawing.Point(115, 49);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(123, 29);
+            this.Login.Size = new System.Drawing.Size(187, 31);
             this.Login.TabIndex = 0;
-            this.Login.Text = "User login";
+            this.Login.Text = "Authentication";
             // 
             // userid_label
             // 
             this.userid_label.AutoSize = true;
             this.userid_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.userid_label.Location = new System.Drawing.Point(38, 72);
+            this.userid_label.Location = new System.Drawing.Point(42, 107);
             this.userid_label.Name = "userid_label";
             this.userid_label.Size = new System.Drawing.Size(76, 24);
             this.userid_label.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace main
             // 
             this.password_label.AutoSize = true;
             this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.password_label.Location = new System.Drawing.Point(12, 120);
+            this.password_label.Location = new System.Drawing.Point(16, 155);
             this.password_label.Name = "password_label";
             this.password_label.Size = new System.Drawing.Size(102, 24);
             this.password_label.TabIndex = 1;
@@ -72,7 +72,7 @@ namespace main
             // userid_textBox
             // 
             this.userid_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.userid_textBox.Location = new System.Drawing.Point(111, 69);
+            this.userid_textBox.Location = new System.Drawing.Point(115, 102);
             this.userid_textBox.Name = "userid_textBox";
             this.userid_textBox.Size = new System.Drawing.Size(191, 29);
             this.userid_textBox.TabIndex = 1;
@@ -81,7 +81,7 @@ namespace main
             // password_textBox
             // 
             this.password_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.password_textBox.Location = new System.Drawing.Point(111, 117);
+            this.password_textBox.Location = new System.Drawing.Point(115, 150);
             this.password_textBox.Name = "password_textBox";
             this.password_textBox.Size = new System.Drawing.Size(191, 29);
             this.password_textBox.TabIndex = 2;
@@ -91,7 +91,7 @@ namespace main
             // 
             this.error_label.AutoSize = true;
             this.error_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.error_label.Location = new System.Drawing.Point(111, 50);
+            this.error_label.Location = new System.Drawing.Point(115, 80);
             this.error_label.Name = "error_label";
             this.error_label.Size = new System.Drawing.Size(36, 16);
             this.error_label.TabIndex = 4;
@@ -99,25 +99,26 @@ namespace main
             // 
             // login_button
             // 
-            this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.login_button.Location = new System.Drawing.Point(120, 161);
+            this.login_button.Location = new System.Drawing.Point(115, 201);
             this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(88, 35);
+            this.login_button.Size = new System.Drawing.Size(191, 40);
             this.login_button.TabIndex = 3;
-            this.login_button.Text = "Login";
+            this.login_button.Text = "Log in";
             this.login_button.UseVisualStyleBackColor = true;
             // 
             // exit_button
             // 
-            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.exit_button.Location = new System.Drawing.Point(214, 161);
+            this.exit_button.FlatAppearance.BorderSize = 0;
+            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.exit_button.Location = new System.Drawing.Point(308, 0);
             this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(88, 35);
+            this.exit_button.Size = new System.Drawing.Size(94, 56);
             this.exit_button.TabIndex = 4;
-            this.exit_button.Text = "Exit";
-            this.exit_button.UseVisualStyleBackColor = true;
+            this.exit_button.Text = "close";
+            this.exit_button.UseVisualStyleBackColor = false;
             this.exit_button.Click += new System.EventHandler(this.button2_Click);
             // 
             // AuthorizationForm
@@ -125,7 +126,7 @@ namespace main
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(362, 242);
+            this.ClientSize = new System.Drawing.Size(402, 271);
             this.ControlBox = false;
             this.Controls.Add(this.exit_button);
             this.Controls.Add(this.login_button);
