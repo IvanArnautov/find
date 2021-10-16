@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,6 +29,32 @@ namespace main
         private void label1_Click(object sender, EventArgs e)
         {
             this.Close(); // Закрываем текущую форму
+        }
+
+        private void login_button_Click(object sender, EventArgs e)
+        {
+            String username = username_field.Text;
+            String password = password_field.Text;
+
+            Database db = new Database();
+
+            DataTable table = new DataTable();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `username`= @us AND `password `=@ps",db.GetConnection());
+            command.Parameters.Add("@us", MySqlDbType.VarChar).Value=username;
+            command.Parameters.Add("@ps", MySqlDbType.VarChar).Value = password;
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+                MessageBox.Show("Yes");
+            else
+                MessageBox.Show("No")
+
         }
     }
 }

@@ -31,8 +31,8 @@ namespace main
         {
             this.userid_label = new System.Windows.Forms.Label();
             this.password_label = new System.Windows.Forms.Label();
-            this.userid_textBox = new System.Windows.Forms.TextBox();
-            this.password_textBox = new System.Windows.Forms.TextBox();
+            this.username_field = new System.Windows.Forms.TextBox();
+            this.password_field = new System.Windows.Forms.TextBox();
             this.error_label = new System.Windows.Forms.Label();
             this.login_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,24 +58,24 @@ namespace main
             this.password_label.TabIndex = 1;
             this.password_label.Text = ": Password";
             // 
-            // userid_textBox
+            // username_field
             // 
-            this.userid_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.userid_textBox.Location = new System.Drawing.Point(117, 102);
-            this.userid_textBox.Name = "userid_textBox";
-            this.userid_textBox.Size = new System.Drawing.Size(191, 29);
-            this.userid_textBox.TabIndex = 1;
-            this.userid_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.username_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.username_field.Location = new System.Drawing.Point(117, 102);
+            this.username_field.Name = "username_field";
+            this.username_field.Size = new System.Drawing.Size(191, 29);
+            this.username_field.TabIndex = 1;
+            this.username_field.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // password_textBox
+            // password_field
             // 
-            this.password_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.password_textBox.Location = new System.Drawing.Point(117, 150);
-            this.password_textBox.Name = "password_textBox";
-            this.password_textBox.Size = new System.Drawing.Size(191, 29);
-            this.password_textBox.TabIndex = 2;
-            this.password_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.password_textBox.UseSystemPasswordChar = true;
+            this.password_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.password_field.Location = new System.Drawing.Point(117, 150);
+            this.password_field.Name = "password_field";
+            this.password_field.Size = new System.Drawing.Size(191, 29);
+            this.password_field.TabIndex = 2;
+            this.password_field.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.password_field.UseSystemPasswordChar = true;
             // 
             // error_label
             // 
@@ -97,6 +97,7 @@ namespace main
             this.login_button.TabIndex = 3;
             this.login_button.Text = "Log in";
             this.login_button.UseVisualStyleBackColor = true;
+            this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
             // label1
             // 
@@ -119,8 +120,8 @@ namespace main
             this.Controls.Add(this.label1);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.error_label);
-            this.Controls.Add(this.password_textBox);
-            this.Controls.Add(this.userid_textBox);
+            this.Controls.Add(this.password_field);
+            this.Controls.Add(this.username_field);
             this.Controls.Add(this.password_label);
             this.Controls.Add(this.userid_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -140,8 +141,8 @@ namespace main
         #endregion
         private System.Windows.Forms.Label userid_label;
         private System.Windows.Forms.Label password_label;
-        private System.Windows.Forms.TextBox userid_textBox;
-        private System.Windows.Forms.TextBox password_textBox;
+        private System.Windows.Forms.TextBox username_field;
+        private System.Windows.Forms.TextBox password_field;
         private System.Windows.Forms.Label error_label;
         private System.Windows.Forms.Button login_button;
         private System.Windows.Forms.Label label1;
