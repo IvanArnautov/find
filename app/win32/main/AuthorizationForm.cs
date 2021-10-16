@@ -51,11 +51,11 @@ namespace main
             adapter.Fill(table);
 
             if (table.Rows.Count > 0)
-                MessageBox.Show("OK");
-            //show_label.Text = "Succeful";
+                //MessageBox.Show("OK");
+            show_label.Text = "Succeful";
             else
-                MessageBox.Show("NOT");
-            //show_label.Text = "not";
+                //MessageBox.Show("NOT");
+            show_label.Text = "not";
 
         }
     }

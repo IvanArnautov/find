@@ -61,6 +61,7 @@ namespace main
             // username_field
             // 
             this.username_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.username_field.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.username_field.Location = new System.Drawing.Point(117, 102);
             this.username_field.Name = "username_field";
             this.username_field.Size = new System.Drawing.Size(191, 29);
@@ -70,6 +71,7 @@ namespace main
             // password_field
             // 
             this.password_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.password_field.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.password_field.Location = new System.Drawing.Point(117, 150);
             this.password_field.Name = "password_field";
             this.password_field.Size = new System.Drawing.Size(191, 29);
