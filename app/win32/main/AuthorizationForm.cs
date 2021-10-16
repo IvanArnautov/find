@@ -51,9 +51,11 @@ namespace main
             adapter.Fill(table);
 
             if (table.Rows.Count > 0)
-                MessageBox.Show("Yes");
+                MessageBox.Show("OK");
+            //show_label.Text = "Succeful";
             else
-                MessageBox.Show("No")
+                MessageBox.Show("OK");
+            //show_label.Text = "not";
 
         }
     }

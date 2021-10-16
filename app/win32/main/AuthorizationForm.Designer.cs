@@ -33,7 +33,7 @@ namespace main
             this.password_label = new System.Windows.Forms.Label();
             this.username_field = new System.Windows.Forms.TextBox();
             this.password_field = new System.Windows.Forms.TextBox();
-            this.error_label = new System.Windows.Forms.Label();
+            this.show_label = new System.Windows.Forms.Label();
             this.login_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -77,15 +77,14 @@ namespace main
             this.password_field.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.password_field.UseSystemPasswordChar = true;
             // 
-            // error_label
+            // show_label
             // 
-            this.error_label.AutoSize = true;
-            this.error_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.error_label.Location = new System.Drawing.Point(117, 73);
-            this.error_label.Name = "error_label";
-            this.error_label.Size = new System.Drawing.Size(36, 16);
-            this.error_label.TabIndex = 4;
-            this.error_label.Text = "error";
+            this.show_label.AutoSize = true;
+            this.show_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.show_label.Location = new System.Drawing.Point(117, 73);
+            this.show_label.Name = "show_label";
+            this.show_label.Size = new System.Drawing.Size(0, 16);
+            this.show_label.TabIndex = 4;
             // 
             // login_button
             // 
@@ -119,7 +118,7 @@ namespace main
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.login_button);
-            this.Controls.Add(this.error_label);
+            this.Controls.Add(this.show_label);
             this.Controls.Add(this.password_field);
             this.Controls.Add(this.username_field);
             this.Controls.Add(this.password_label);
@@ -143,7 +142,7 @@ namespace main
         private System.Windows.Forms.Label password_label;
         private System.Windows.Forms.TextBox username_field;
         private System.Windows.Forms.TextBox password_field;
-        private System.Windows.Forms.Label error_label;
+        private System.Windows.Forms.Label show_label;
         private System.Windows.Forms.Button login_button;
         private System.Windows.Forms.Label label1;
     }
