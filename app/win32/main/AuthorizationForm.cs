@@ -36,15 +36,15 @@ namespace main
             String username = username_field.Text;
             String password = password_field.Text;
 
-            Database db = new Database();
+            Database database = new Database();
 
             DataTable table = new DataTable();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `username`= @us AND `password `=@ps",db.GetConnection());
-            command.Parameters.Add("@us", MySqlDbType.VarChar).Value=username;
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `username`= @us AND `password`=@ps",database.GetConnection());
+            command.Parameters.Add("@us", MySqlDbType.VarChar).Value = username;
             command.Parameters.Add("@ps", MySqlDbType.VarChar).Value = password;
 
             adapter.SelectCommand = command;
@@ -54,7 +54,7 @@ namespace main
                 MessageBox.Show("OK");
             //show_label.Text = "Succeful";
             else
-                MessageBox.Show("OK");
+                MessageBox.Show("NOT");
             //show_label.Text = "not";
 
         }

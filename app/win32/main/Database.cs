@@ -9,7 +9,7 @@ namespace main
 {
     class Database
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=main");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=main;SSL Mode = None");
 
         public void openConnection()
         {
