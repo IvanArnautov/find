@@ -30,7 +30,6 @@ namespace main
         {
             this.Close(); // Закрываем текущую форму
         }
-
         private void login_button_Click(object sender, EventArgs e)
         {
             String username = username_field.Text;
@@ -42,7 +41,6 @@ namespace main
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-
             MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `username`= @us AND `password`=@ps",database.GetConnection());
             command.Parameters.Add("@us", MySqlDbType.VarChar).Value = username;
             command.Parameters.Add("@ps", MySqlDbType.VarChar).Value = password;
@@ -50,12 +48,14 @@ namespace main
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
+           
+
             if (table.Rows.Count > 0)
                 //MessageBox.Show("OK");
-            show_label.Text = "Succeful";
+            show_label.Text = "Logged in.";
             else
                 //MessageBox.Show("NOT");
-            show_label.Text = "not";
+            show_label.Text = "Access denied. Contact your administrator.";
 
         }
     }

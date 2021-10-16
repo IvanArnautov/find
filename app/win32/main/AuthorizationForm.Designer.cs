@@ -36,13 +36,14 @@ namespace main
             this.show_label = new System.Windows.Forms.Label();
             this.login_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // userid_label
             // 
             this.userid_label.AutoSize = true;
-            this.userid_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.userid_label.Location = new System.Drawing.Point(12, 109);
+            this.userid_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.userid_label.Location = new System.Drawing.Point(13, 99);
             this.userid_label.Name = "userid_label";
             this.userid_label.Size = new System.Drawing.Size(102, 22);
             this.userid_label.TabIndex = 1;
@@ -51,8 +52,8 @@ namespace main
             // password_label
             // 
             this.password_label.AutoSize = true;
-            this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.password_label.Location = new System.Drawing.Point(12, 157);
+            this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.password_label.Location = new System.Drawing.Point(13, 147);
             this.password_label.Name = "password_label";
             this.password_label.Size = new System.Drawing.Size(99, 22);
             this.password_label.TabIndex = 1;
@@ -62,7 +63,7 @@ namespace main
             // 
             this.username_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.username_field.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.username_field.Location = new System.Drawing.Point(117, 102);
+            this.username_field.Location = new System.Drawing.Point(118, 92);
             this.username_field.Name = "username_field";
             this.username_field.Size = new System.Drawing.Size(191, 29);
             this.username_field.TabIndex = 1;
@@ -72,7 +73,7 @@ namespace main
             // 
             this.password_field.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.password_field.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.password_field.Location = new System.Drawing.Point(117, 150);
+            this.password_field.Location = new System.Drawing.Point(118, 140);
             this.password_field.Name = "password_field";
             this.password_field.Size = new System.Drawing.Size(191, 29);
             this.password_field.TabIndex = 2;
@@ -83,7 +84,8 @@ namespace main
             // 
             this.show_label.AutoSize = true;
             this.show_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.show_label.Location = new System.Drawing.Point(117, 73);
+            this.show_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.show_label.Location = new System.Drawing.Point(118, 63);
             this.show_label.Name = "show_label";
             this.show_label.Size = new System.Drawing.Size(0, 16);
             this.show_label.TabIndex = 4;
@@ -92,7 +94,7 @@ namespace main
             // 
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.login_button.Location = new System.Drawing.Point(117, 200);
+            this.login_button.Location = new System.Drawing.Point(118, 190);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(191, 40);
             this.login_button.TabIndex = 3;
@@ -103,13 +105,23 @@ namespace main
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(349, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 16);
+            this.label1.Size = new System.Drawing.Size(44, 18);
             this.label1.TabIndex = 5;
             this.label1.Text = "close";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(172, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 33);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Login";
             // 
             // LoginForm
             // 
@@ -118,6 +130,7 @@ namespace main
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(402, 271);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.show_label);
@@ -147,5 +160,6 @@ namespace main
         private System.Windows.Forms.Label show_label;
         private System.Windows.Forms.Button login_button;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
